@@ -163,9 +163,8 @@
             lblPowerResult.AutoSize = true;
             lblPowerResult.Location = new Point(356, 161);
             lblPowerResult.Name = "lblPowerResult";
-            lblPowerResult.Size = new Size(43, 15);
+            lblPowerResult.Size = new Size(0, 15);
             lblPowerResult.TabIndex = 14;
-            lblPowerResult.Text = "Power:";
             // 
             // label1
             // 
@@ -213,7 +212,7 @@
             lblExponent.AutoSize = true;
             lblExponent.Location = new Point(292, 237);
             lblExponent.Name = "lblExponent";
-            lblExponent.Size = new Size(59, 15);
+            lblExponent.Size = new Size(60, 15);
             lblExponent.TabIndex = 20;
             lblExponent.Text = "Exponent:";
             // 

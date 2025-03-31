@@ -34,8 +34,9 @@ namespace lab2
         // Recursive fibonacci sequence
         public int RecursiveFibonacci(int n)
         {
-            //if (n == 0) return 1;
-            return 0;
+            if (n == 0) return 0;
+            if (n == 1) return 1;
+            return RecursiveFibonacci(n - 1) + RecursiveFibonacci(n - 2);
         }
         private void btnCalculateFibonacci_Click(object sender, EventArgs e)
         {
@@ -46,15 +47,15 @@ namespace lab2
         // Recursive power
         public int RecursivePower(int baseNum, int exponent)
         {
-            //if (n == 0) return 1;
-            return baseNum * RecursivePower(baseNum, exponent);
+            if (exponent == 0) return 1;
+            return baseNum * RecursivePower(baseNum, exponent - 1);
         }
         private void btnCalculatePower_Click(object sender, EventArgs e)
         {
             int baseNum = int.Parse(txtBase.Text);
             int exponent = int.Parse(txtExponent.Text);
             int result = RecursivePower(baseNum, exponent);
-            lblPowerResult.Text = $"Power: {result}";
+            lblPowerResult.Text = $"{baseNum}^{exponent} = {result}";
         }
     }
 }

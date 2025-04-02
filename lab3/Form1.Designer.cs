@@ -29,34 +29,34 @@
         private void InitializeComponent()
         {
             btnShowInfo = new Button();
-            listBox1 = new ListBox();
+            txtInfo = new ListBox();
             SuspendLayout();
             // 
             // btnShowInfo
             // 
-            btnShowInfo.Location = new Point(97, 120);
+            btnShowInfo.Location = new Point(12, 12);
             btnShowInfo.Name = "btnShowInfo";
-            btnShowInfo.Size = new Size(218, 71);
+            btnShowInfo.Size = new Size(145, 43);
             btnShowInfo.TabIndex = 0;
             btnShowInfo.Text = "Show Information";
             btnShowInfo.UseVisualStyleBackColor = true;
             btnShowInfo.Click += btnShowInfo_Click;
             // 
-            // listBox1
+            // txtInfo
             // 
-            listBox1.FormattingEnabled = true;
-            listBox1.ItemHeight = 15;
-            listBox1.Location = new Point(398, 92);
-            listBox1.Name = "listBox1";
-            listBox1.Size = new Size(312, 229);
-            listBox1.TabIndex = 1;
+            txtInfo.FormattingEnabled = true;
+            txtInfo.ItemHeight = 15;
+            txtInfo.Location = new Point(163, 12);
+            txtInfo.Name = "txtInfo";
+            txtInfo.Size = new Size(459, 259);
+            txtInfo.TabIndex = 1;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(listBox1);
+            ClientSize = new Size(634, 287);
+            Controls.Add(txtInfo);
             Controls.Add(btnShowInfo);
             Name = "Form1";
             Text = "Form1";
@@ -66,6 +66,6 @@
         #endregion
 
         private Button btnShowInfo;
-        private ListBox listBox1;
+        private ListBox txtInfo;
     }
 }
